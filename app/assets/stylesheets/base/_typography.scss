@@ -1,0 +1,69 @@
+@import "variables";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  margin: 0;
+}
+
+h1{
+  color: $blue;
+  font-weight: 400;
+  font-size: 32px;
+}
+h2{
+  color: $blue;
+  font-weight: 400;
+  font-size: 26px;
+}
+h3{
+  color: $light-blue;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+h4{
+  color: $blue;
+  font-weight: 300;
+  font-size: 22px;
+}
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

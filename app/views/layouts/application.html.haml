@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %title= t(:title, raise: true)
+    = stylesheet_link_tag "application"
+
+  %body
+    = render partial: 'layouts/header'
+    
+    = yield
+
+    = render partial: 'layouts/footer'
+
+    = render partial: 'layouts/olark'
+
+    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+    = javascript_include_tag "http://d3js.org/d3.v2.js"
+    = javascript_include_tag "application"
+    %script{:type=>"text/javascript"}
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-69212911-7"]);
+      _gaq.push(["_trackPageview"]);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

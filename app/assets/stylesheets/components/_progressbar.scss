@@ -1,0 +1,30 @@
+@import "base/variables";
+#progressbar {
+      border-radius: 13px; /* (height of inner div) / 2 + padding */
+      padding: 3px;
+      text-align: center;
+      margin: 30px auto;
+      clear: both;
+    }
+
+  .chart rect:first-of-type {
+    color: #F1F5F6;
+    stroke: #F1F5F6;
+    fill: #F1F5F6;
+  }
+
+  text:first-of-type {
+    fill: #F1F5F6;
+    font-family: 'Roboto';
+  }
+
+  .chart rect:nth-of-type(2) {
+    color: #8A9CBF;
+    stroke: transparent;
+    fill: #8A9CBF;
+  }
+
+  text:nth-of-type(2) {
+    fill: #fff;
+    font-family: 'Roboto';
+  }

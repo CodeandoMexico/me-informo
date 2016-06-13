@@ -1,0 +1,64 @@
+@import "base/variables";
+section.section-feed{
+  padding:60px 0;
+  overflow: hidden;
+  background-color: $lightest-blue;
+
+  h2{
+    padding-bottom: 20px;
+  }
+
+  h4{
+      color: $light-blue;
+    }
+  p{
+    color: $blue;
+  }
+  small{
+    color: $medium-gray;
+  }
+  a.text-button{
+    color: $light-blue;
+    padding-top: 10px;
+    float: right;
+    display: inline-block;
+  }
+
+  .events-wrapper{
+    width:48%;
+    margin-right: 2%;
+    float: left;
+  }
+  .event{
+    padding: 20px 140px 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba($light-blue, .3);
+    border-radius: 20px;
+    position: relative;
+
+    .date{
+      background-color: $light-blue;
+      color: #fff;
+      float: right;
+      width: 120px;
+      border-radius: 10px;
+      padding: 10px;
+      position: absolute;
+      right: 20px;
+      top:20px;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+  .news-wrapper{
+    width:48%;
+    margin-left: 2%;
+    float: right;
+  }
+  .new{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba($light-blue, .3);
+    border-radius: 20px;
+  }
+}
